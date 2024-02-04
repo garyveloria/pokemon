@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #f5f8fc;
+  display: flex;
+  justify-content: center;
+  padding: 10px 10vh;
+}
+
+.container {
+  border-radius: 20px;
+  padding: 15px;
+  background-color: white;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-container {
+  background: linear-gradient(rgba(111, 105, 111, 0.8),rgba(198, 198, 243, 0.5)),url(Image/pokeball.jpg);
+  background-size: cover;
+  padding: 20px;
+  max-height: 80%;
+  width: 80%;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* Dropdown Container Styles */
+.dropdown {
+  position: inherit;
+}
+
+/* Dropdown Button Styles */
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  height: 50px;
+  width: 160px;
+  border: none;
+}
+
+/* Dropdown Content Styles */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+  border-top: 1px solid white;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+/* Dropdown Links Styles */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #e0e0e0;
+  color: #1b1b1b;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  background-color: #2b2b2b;
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+
+/* Pokemon Details Style */
+#pokemon-container {
+  width: 320px;
+  height: 70vh;
+  margin-left: 200px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+.pokemon-info-container {
+  margin-top: 6vh;
+  height: 100%;
+}
+
+.pokemon-image {
+  object-fit: contain;
+  image-rendering: pixelated;
+  max-width: 350px;
+  max-height: 22vh;
+  height: 120px;
+  width: 120px;
+}
+
+.pokemon-name {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-info {
+  margin: 15px;
+}
+
+.info {
+  background-color: #eaecec;
+  text-align: center;
+  border: 2px solid #dce2e3;
+}
+
+.pokemon-info {
+  background-color: #dce2e3;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.pokemon-info-variable-container {
+  width: 100%;
+  background-color: #f6f8fc;
+  padding: 8px 0;
+  border-radius: 30px;
+  margin: 5px;
+}
+
+.span-empty {
+  font-size: 18px !important;
+}

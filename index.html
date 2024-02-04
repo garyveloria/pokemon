@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokemon List</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="dropdown" onmouseenter="showPokemonList()" onmouseleave="hidePokemonList()">
+        <button class="dropbtn">Pokemon List</button>
+        <div id="dropdown" class="dropdown-content"></div>
+      </div>
+      <div id="pokemon-container" class="container column center">
+        <div class="pokemon-info-container" style="display: none;">
+          <img class="pokemon-image" alt="">
+          <h2 class="pokemon-name"></h2>
+          <div class="details-container">
+            <p class="p-info">Types: <span class="pokemon-types info"></span></p></p>
+            <p class="p-info">Height: <span class="height-info info"></span></p>
+            <p class="p-info">Weight: <span class="weight-info info"></span></p>
+            <p class="p-info">Abilities: <span class="abilities-info info"></span></p> 
+          </div>
+        </div>
+        <div id="pokemon-info-empty">
+          <span class="span-empty">Select a Pokemon<br /> in dropdown list <br />to display here.</span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
